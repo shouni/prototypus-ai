@@ -6,7 +6,7 @@ class PrototypusAI:
         pass
 
     def hello(self):
-      print("Hello, world!")
+        print("Hello, world!")
 
     def  byebye(self):
         print("Byebye, world!")
