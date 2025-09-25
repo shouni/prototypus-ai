@@ -1,8 +1,9 @@
-## 📄 README.md 構成案 (Python版 Prototypus AI)
+# Prototypus AI (Python): The Data Transformation Tool
 
-### \# Prototypus AI (Python): The Data Transformation Tool
-
-> **[ここにプロジェクトのバッジやロゴを挿入]** 例: 
+[![Python Version](https://img.shields.io/badge/Python-3.12+-blue?logo=python)](https://www.python.org/) 
+[![CLI Framework](https://img.shields.io/badge/CLI-python--fire-red?logo=pypi)](https://github.com/google/python-fire) 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Status](https://img.shields.io/badge/Status-Feature%20Complete-green)](https://github.com/snknsk/prototypus-ai)
 
 ### 🚀 概要 (About)
 
