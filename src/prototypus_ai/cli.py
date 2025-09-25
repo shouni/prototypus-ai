@@ -2,10 +2,6 @@ import fire
 import sys
 import os
 
-# サンプルとして、ダミーの変換関数をインポート
-# 実際には、core.py や converters/ にあるロジックをインポートします
-# from .core import process_conversion
-
 class PrototypusAI:
     """
     Prototypus AI: The data transformation tool for the 21st century.
@@ -20,19 +16,14 @@ class PrototypusAI:
             output_format: The desired output format (e.g., 'html', 'json', 'yaml').
             prompt: Optional. A custom prompt to guide the transformation.
         """
-        # ファイルの存在チェック
         if not os.path.exists(input_path):
             print(f"Error: The input file '{input_path}' was not found.", file=sys.stderr)
             sys.exit(1)
 
-        # 変換ロジックを呼び出す
         print(f"Starting conversion of '{input_path}' to '{output_format}'...")
         print(f"Using prompt: '{prompt}'" if prompt else "Using default conversion rules.")
 
-        # ダミーの変換処理
-        # ここに実際の Gemini API 呼び出しと変換ロジックを実装します
         try:
-            # result = process_conversion(input_path, output_format, prompt)
             result = f"Converted content for {input_path} to {output_format}."
             print("\n--- Converted Content ---")
             print(result)
@@ -45,6 +36,17 @@ def main():
     """
     Main entry point for the Prototypus AI CLI.
     """
+
+    print("Welcome to Prototypus AI!")
+    exit(0)
+
+    if len(sys.argv) > 1 and sys.argv[1] in ['--help', '-h']:
+        print(PrototypusAI.__doc__)
+        print("\nAvailable commands:")
+        print("  convert --input-path <path> --output-format <format> [--prompt <text>]")
+        print("  run <message>")
+        return
+
     fire.Fire(PrototypusAI)
 
 if __name__ == '__main__':
