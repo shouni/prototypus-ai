@@ -1,0 +1,18 @@
+ Pythonの__pycache__ディレクトリを除外
+__pycache__/
+
+
+# 仮想環境を除外
+venv/
+.venv/
+
+# IDEやエディタの一時ファイルを除外
+.vscode/
+.idea/
+*.swp
+
+# ビルドされたパッケージや一時ファイル
+dist/
+build/
+*.egg-info/
+/prototypus-ai.iml
